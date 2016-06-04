@@ -1,0 +1,158 @@
+2016/06/03 10:02:36 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:02:36 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:02:36 CST 2016]; root of context hierarchy
+2016/06/03 10:02:37 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:02:37 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:02:38 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:02:38 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 1723 ms
+2016/06/03 10:02:38 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:02:38 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:02:38 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:02:38 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:02:38 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:02:39 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:02:38 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:02:39 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:02:38 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:02:39 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:02:39 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 595 ms
+2016/06/03 10:26:48 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:02:38 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:26:48 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:02:36 CST 2016]; root of context hierarchy
+2016/06/03 10:26:51 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:26:51 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:26:51 CST 2016]; root of context hierarchy
+2016/06/03 10:26:51 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:26:51 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:26:52 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:26:53 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 1735 ms
+2016/06/03 10:26:53 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:26:53 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:26:53 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:26:53 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:26:53 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:26:53 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:26:53 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:26:53 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:26:53 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 533 ms
+2016/06/03 10:27:36 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:26:53 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:27:36 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:26:51 CST 2016]; root of context hierarchy
+2016/06/03 10:27:40 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:27:40 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:27:40 CST 2016]; root of context hierarchy
+2016/06/03 10:27:40 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:27:40 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:27:41 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:27:41 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 1794 ms
+2016/06/03 10:27:41 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:27:42 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:27:42 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:27:42 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:27:42 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:27:42 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:27:42 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:27:42 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:27:42 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:27:42 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:27:42 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 564 ms
+2016/06/03 10:28:22 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:27:42 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:22 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:27:40 CST 2016]; root of context hierarchy
+2016/06/03 10:28:24 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:28:24 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:28:24 CST 2016]; root of context hierarchy
+2016/06/03 10:28:24 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:28:24 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:28:25 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:28:25 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 1521 ms
+2016/06/03 10:28:25 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:28:25 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:25 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:25 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:28:25 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:28:26 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:25 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:26 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:25 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:26 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:28:26 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 595 ms
+2016/06/03 10:28:26 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:25 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:26 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:28:24 CST 2016]; root of context hierarchy
+2016/06/03 10:28:30 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:28:30 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:28:30 CST 2016]; root of context hierarchy
+2016/06/03 10:28:31 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:28:31 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:28:32 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:28:32 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 2048 ms
+2016/06/03 10:28:32 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:28:32 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:32 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:32 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:28:33 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:28:33 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:32 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:33 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:32 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:28:33 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:28:33 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 913 ms
+2016/06/03 10:30:17 INFO  [UserController.java:36] : UserController.getAllUser begin
+2016/06/03 10:31:22 INFO  [UserController.java:36] : UserController.getAllUser begin
+2016/06/03 10:34:44 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:28:32 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:34:44 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:28:30 CST 2016]; root of context hierarchy
+2016/06/03 10:34:46 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:34:46 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:34:46 CST 2016]; root of context hierarchy
+2016/06/03 10:34:46 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:34:46 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:34:47 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:34:48 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 1915 ms
+2016/06/03 10:34:48 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:34:48 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:34:48 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:34:48 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:34:48 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:34:49 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:34:48 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:34:49 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:34:48 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:34:49 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:34:49 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 899 ms
+2016/06/03 10:35:55 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:34:48 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:35:55 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:34:46 CST 2016]; root of context hierarchy
+2016/06/03 10:35:58 INFO  [ContextLoader.java:307] : Root WebApplicationContext: initialization started
+2016/06/03 10:35:58 INFO  [AbstractApplicationContext.java:578] : Refreshing Root WebApplicationContext: startup date [Fri Jun 03 10:35:58 CST 2016]; root of context hierarchy
+2016/06/03 10:35:58 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016/06/03 10:35:58 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/datasource.xml]
+2016/06/03 10:36:00 INFO  [PropertiesLoaderSupport.java:172] : Loading properties file from class path resource [Config.properties]
+2016/06/03 10:36:00 INFO  [ContextLoader.java:347] : Root WebApplicationContext: initialization completed in 1747 ms
+2016/06/03 10:36:00 INFO  [FrameworkServlet.java:489] : FrameworkServlet 'springMVC': initialization started
+2016/06/03 10:36:00 INFO  [AbstractApplicationContext.java:578] : Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:36:00 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:36:00 INFO  [XmlBeanDefinitionReader.java:317] : Loading XML bean definitions from ServletContext resource [/WEB-INF/springMVC-servlet.xml]
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:36:00 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
+2016/06/03 10:36:00 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:36:00 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:36:00 INFO  [RequestMappingHandlerAdapter.java:532] : Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:36:00 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 10:36:00 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:36:00 INFO  [FrameworkServlet.java:508] : FrameworkServlet 'springMVC': initialization completed in 548 ms
+2016/06/03 10:40:16 INFO  [UserController.java:37] : UserController.getAllUser begin
+2016/06/03 10:47:53 INFO  [UserController.java:118] : UserController.validateByParam begin
+2016/06/03 11:22:57 INFO  [AbstractApplicationContext.java:960] : Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Fri Jun 03 10:36:00 CST 2016]; parent: Root WebApplicationContext
+2016/06/03 11:22:57 INFO  [AbstractApplicationContext.java:960] : Closing Root WebApplicationContext: startup date [Fri Jun 03 10:35:58 CST 2016]; root of context hierarchy
