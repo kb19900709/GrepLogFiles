@@ -1,11 +1,12 @@
 Mapped >>> count:8
+POST >>> count:3
 
 
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
-2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)
 2016/06/03 10:26:53 INFO  [AbstractUrlHandlerMapping.java:341] : Mapped URL path [/resource/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[DELETE]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.deleteUser(java.lang.String)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/]}" onto public java.lang.String com.controller.home.HomeController.dispatcher()
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/query],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUserByParam(com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[POST]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.addUser(com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/validate],methods=[POST]}" onto private org.springframework.http.ResponseEntity<?> com.controller.user.UserController.validateByParam(com.myBatis.model.User)
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user],methods=[GET]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.getAllUser()
+2016/06/03 10:26:53 INFO  [AbstractHandlerMethodMapping.java:527] : Mapped "{[/user/{id}],methods=[PUT]}" onto private java.util.Map<java.lang.String, java.lang.Object> com.controller.user.UserController.updateUser(java.lang.String,com.myBatis.model.User)

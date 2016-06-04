@@ -6,10 +6,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -61,17 +63,20 @@ abstract public class GrepProcess {
 				checkedMap.put(value, key);
 			}
 		}
+		
+		logger.debug("checkedMap >>> "+checkedMap);
 
-		//字串處理
-		Map<String,Integer> recordMap = new HashMap<String,Integer>();
+		//字串過濾紀錄
 		StringBuffer sbResult = new StringBuffer();
-		StringBuffer sbBody = new StringBuffer();		
+		Map<String,Integer> recordMap = new HashMap<String,Integer>(); //紀錄 errorKey/count
+		Set<String> bodySet = new HashSet<String>(); //記錄錯誤資料
 		String[] textLineArray = text.split(Constant.ENV_WARP);
 		for(String line : textLineArray){			
 			for(String errorKey : checkedMap.keySet()){
 				if(line.indexOf(errorKey) != -1){
-					sbBody.append(line + Constant.ENV_WARP);
+					bodySet.add(line);
 					if(recordMap.get(errorKey) != null){
+						//若有紀錄則+1
 						recordMap.put(errorKey, recordMap.get(errorKey) + 1);
 					}else{
 						recordMap.put(errorKey, 1);
@@ -80,13 +85,21 @@ abstract public class GrepProcess {
 			}
 		}
 		
+		logger.debug("recordMap >>> " + recordMap);
+		
+		//title
 		for(Entry<String,Integer> set : recordMap.entrySet()){
 			sbResult.append(set.getKey()+" >>> count:"+set.getValue());
 			sbResult.append(Constant.ENV_WARP);
 		}
 		
-		sbResult.append(Constant.ENV_WARP+Constant.ENV_WARP);
-		sbResult.append(sbBody.toString());
+		//空兩行
+		sbResult.append(Constant.ENV_WARP + Constant.ENV_WARP);
+		
+		//輸出資料資串
+		for(String str:bodySet){
+			sbResult.append(str + Constant.ENV_WARP);
+		}
 		
 		return sbResult.toString();
 	}
